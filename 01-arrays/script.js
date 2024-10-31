@@ -12,19 +12,25 @@ const teachers = [
 // [Nome insengante] è l'insegnante in posizione [i]
 for (let i = 0; i < teachers.length; i++) {
      const currentTeacher = teachers[i]; // Prendi l'elemento che si trova in posizione i
-     const currenti = [i];
+     const currenti = [i];                // Prendi il  numero della posizione i
      console.log(`${currentTeacher} è l'insegnante in posizione ${currenti}`);
      console.log();
    }
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = null;
+const fourthTeacher = teachers.at(3);
+console.log(fourthTeacher);
+
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
+teachers.splice(4,1,"Patrick");
+teacherSpliced = teachers[4];
+console.log( teacherSpliced);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = null;
+const lastTeacher = teachers.pop();
+ console.log (lastTeacher);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 const firstTeacher = null;
